@@ -20,12 +20,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* Increased height */
+    height: 120px;
     background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
-    z-index: 1000; /* Ensure header stays above other content */
-    transition: top 0.3s, transform 0.3s; /* Smooth transition when scrolling and when appearing */
-    transform: translateY(-100%); /* Initially hidden */
+    z-index: 1000;
+    transition: top 0.3s;
+    transform: translateY(-100%);
 }
 
 .header-inner {
@@ -33,11 +33,11 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 20px 0; /* Adjusted padding */
+    padding: 20px 0;
 }
 
 .logo {
-    font-size: 2rem; /* Increased font size */
+    font-size: 2rem;
 }
 
 nav {
@@ -58,6 +58,67 @@ nav {
     color: #fff;
     text-decoration: none;
 }
+
+/* Dropdown */
+.dropdown {
+    display: none;
+}
+
+.dropdown .dropbtn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.3s ease forwards; /* Fade-in animation */
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
 
 /* Hero section */
 .hero {
