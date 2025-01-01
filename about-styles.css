@@ -1,0 +1,56 @@
+/* About Us Section */
+.about-us {
+    height: auto;
+    margin-top: 5vh;
+}
+
+.about-us h1 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.about-us img {
+    transition: transform 0.3s;
+}
+
+.about-us img:hover {
+    transform: scale(1.05);
+}
+
+/* Core Values */
+.values i {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.values i:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+/* General */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+
+/* Footer Styling */
+.social-icons i {
+    transition: color 0.2s;
+}
+
+#fb:hover {
+    color: #007bff;
+}
+
+#insta:hover {
+    color: #ff4000;
+}
+
+#whatsapp:hover {
+    color: #00ff4c;
+}

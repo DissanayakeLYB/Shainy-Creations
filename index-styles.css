@@ -1,0 +1,77 @@
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* font-weight: bold; */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.animated-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-button {
+    animation: bounce 1.5s infinite;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Featured Products Styling */
+.product-card img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card button {
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+.social-icons i {
+    transition: color 0.2s;
+}
+
+#fb:hover {
+    color: #007bff;
+}
+
+#insta:hover {
+    color: #ff4000;
+}
+
+#whatsapp:hover {
+    color: #00ff4c;
+}

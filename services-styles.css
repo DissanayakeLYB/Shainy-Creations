@@ -1,0 +1,55 @@
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Services */
+.services{
+    margin-top: 5vh;
+}
+.service-card i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.service-card i:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+.service-card {
+    background-color: #f8f9fa;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-left: 5px solid #007bff;
+}
+
+/* General Styling */
+h1, h2 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Footer Styling */
+.social-icons i {
+    transition: color 0.2s;
+}
+
+#fb:hover {
+    color: #007bff;
+}
+
+#insta:hover {
+    color: #ff4000;
+}
+
+#whatsapp:hover {
+    color: #00ff4c;
+}
